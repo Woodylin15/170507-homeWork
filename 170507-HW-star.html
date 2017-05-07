@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        
+        <meta charset = "UTF-8">
+        <title>170507作業star</title>
+        
+    </head>    
+        
+        <script>
+        function Button_click001(){
+                var star = "";
+                var i = 0
+                    while (i<=20) {
+
+                        
+                        var k = 10 
+                        while(k > i/2) {
+                            star = star + "&nbsp"+ "&nbsp";
+                            k--;
+                        }
+                        
+                        var j = 0
+                        while(j<=i) {
+                            star = star + "*";
+                            j++;
+                        }
+                        
+                    star += "<br>"  
+                    i = i + 2
+                    }
+            debug.innerHTML = star;
+        }
+        </script>
+        
+        <p id = "debug" ></p>
+        
+    
+    
+    <body>
+
+        <input type = "button" name = "Button1" id = "Button1" value = "請點我" onclick = "Button_click001()">
+        
+    </body>
+    
+</html>
