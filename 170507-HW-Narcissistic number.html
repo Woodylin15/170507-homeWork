@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset = "UTF-8">
+        <title>Narcissistic number</title>
+        
+
+        <div>
+            <h1>水仙花數Narcissistic number</h1>
+        </div>
+    </head>
+    
+    <body>
+ 
+                               
+        <script>
+            function Button1_onclick(){
+
+                for (var x = 1 ; x <= 9 ; x++)
+                {
+                    
+                    for (var y = 0 ; y<=9 ; y++)
+                    {
+                        
+                        for (var z = 0 ; z <= 9 ; z++)
+                        {
+                            
+                            var a = x*100 + y*10 + z;
+                            var b = x*x*x + y*y*y + z*z*z;
+                            
+                            if ( a == b)
+                            {
+                                 document.writeln("水仙花數：" + a +"<br>");
+          
+                            }
+                        }
+                    }
+                }
+            }    
+        </script>
+ 
+        <input type = button id = Button1 name = Button1 
+               value = "按我輸出" onclick = "Button1_onclick()">
+               
+    </body>
+    
+</html>
